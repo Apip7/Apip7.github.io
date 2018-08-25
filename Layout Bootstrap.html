@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Layout Bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="./css/Bootstrap.min.css">
+	<style type="text/css">
+		.container{
+			text-align: center;
+		}
+		.menu{
+			text-align: center;
+		}
+		.example img{
+			width: 200px;
+	
+		}
+		.menu ul{
+			padding: 0;
+			position: relative;
+		}
+		.menu ul li{
+			display: inline-block;
+			position: relative;
+		}
+		.menu ul li a{
+			padding: 10px 20px;
+			text-decoration: none;
+		}
+		ul.submenu{
+			background-color: #eee;
+			border: 1px solid #ccc;
+			text-align: left;
+			position: absolute;
+			top: 20px;
+			left: 10px;
+			display: none;
+		}
+		.menu ul li:hover ul.submenu{
+			display: block;
+			z-index: 1;
+		}
+		ul.submenu li{
+			display: block;
+		}
+		ul.submenu li a{
+			display: block;
+			padding: 5px 10px;
+		}
+		.jumbotron{
+			font-family: 'Raleway', sans-serif;
+			width: 100%;
+			padding: 80px 40px;
+			box-sizing: border-box;
+			text-align: center;
+			color: white;
+			background-color: #aaa;
+			background-image: url(https://images.unsplash.com/photo-1506361797048-46a149213205?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=493e200df17b54d1ef10eb61e1df148a&w=1000&q=80);
+			background-size: cover;
+			position: relative;
+		}
+		.jumbotron h2,
+		.jumbotron p{
+			position: relative;
+		}
+		.overlay{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: black;
+			opacity: 0.4;
+		}
+		.content{
+			background-color: #ddd;
+			min-height: 500px;
+			overflow: auto;
+			text-align: center;
+
+		}
+		.thumbnail{
+			background-color: white;
+			text-align: center;
+			padding: 10px;
+			width: 200px;
+			margin: 10px;
+			float: left;
+		}
+		.thumbnail img{
+			width: 200px;
+			height: 100px;
+		}
+		.footer{
+			background-color: #ccc;
+			padding: 20px;
+			text-align: center;
+		}
+		.row{
+			margin: 0 100px ;
+		}
+		
+
+	</style>
+</head>
+<body>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<img src="https://premium.codepolitan.com/themes/belajarcoding/assets/img/codepolitan_logo.png">
+				</div>
+			</div>
+		</nav>
+
+	<div class="container">
+		<div class="example">
+			<div class="row">
+				<div class="col-md-4 col-md-offset-4">
+					<img src="https://devschool.id/resources/images/sample-logo.png">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="menu">
+		<ul>
+			<li><a href="#">Home</a></li>
+				<li><a href="#">About</a>
+					<ul class="submenu">
+						<li><a href="#">CV</a></li>
+						<li><a href="#">Education</a></li>
+						<li><a href="#">Portofolio</a></li>
+					</ul>
+				</li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div>
+
+	<div class="jumbotron">
+		<div class="overlay"></div>
+			<h2>Welcome to My Homepage</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+
+	<div class="content">
+		<h2>My Products</h2>
+			<div class="row">
+				<div class="thumbnail">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfnv8pRewXfdHPxMION_oPcMQhbmwHEmy4xFNzJFdCpt-G8E07lw">
+				<h2>Pinguin</h2>
+				<p>Rp 250.000</p>
+			</div>
+
+				<div class="thumbnail">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRllMN-GPUhGfjkPyPcO53xrKQ8sKiEbiMHJIYmjO6NZEWBLGZ8w">
+				<h2>Macan</h2>
+				<p>Rp 250.000</p>
+			</div>
+			
+			
+			<div class="thumbnail">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqHvpc8IqsQPaMzLu9A2PZ7O_NYbHItiFk6gP3RvqwURiIFPu5">
+				<h2>Kupu-Kupu</h2>
+				<p>Rp 250.000</p>
+			</div>
+			
+
+			<div class="thumbnail">
+				<img src="https://cdn.push-entertainment.com/video-wallpaper/992/Video-Wallpaper-Sea-Turtle.jpg">
+				<h2>Kura-Kura</h2>
+				<p>Rp 250.000</p>
+			</div>
+
+			
+			<div class="thumbnail">
+				<img src="http://jinnanyang.com/data/out/17/585472901-aquarium-wallpaper-moving-windows-10.jpg">
+				<h2>Nemo</h2>
+				<p>Rp 250.000</p>
+			</div>
+
+						
+		</div>
+
+		<div class="footer">
+			<p>copyright 2018 My Webpage</p>
+		</div>
+		</div>
+	</div>
+</body>
+</html>
